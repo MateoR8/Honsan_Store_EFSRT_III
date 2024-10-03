@@ -134,7 +134,15 @@ CREATE TABLE TB_AVENTURA (
     STOCK INT
 );
 
-
+CREATE TABLE TB_User(
+	IdUser INT PRIMARY KEY IDENTITY (1,1),
+	Nombres VARCHAR(200) NOT NULL,
+	Apellidos VARCHAR(200) NOT NULL,
+	Correo VARCHAR(200) NOT NULL,
+	Contrasenia VARCHAR(200) NOT NULL,
+	DNI_CE VARCHAR(20),
+	RUC VARCHAR(11)
+);
 
 
 INSERT INTO TB_NOVELA (ID, CODIGO_LIBRO, TITULO, GENERO, AUTOR, ANIO_LANZAMIENTO, PRECIO, STOCK) VALUES
@@ -246,3 +254,4 @@ INSERT INTO TB_POEMA (ID, CODIGO_LIBRO, TITULO, GENERO, AUTOR, ANIO_LANZAMIENTO,
 (7, 'POE007', 'El poema de los dones', 'Poesía', 'Pablo Neruda', '2017', 80.00, 5),
 (8, 'POE008', 'Los poemas de la tierra', 'Poesía', 'Octavio Paz', '2019', 70.00, 3),
 (9, 'POE009', 'La casa de la alegría', 'Poesía', 'Jorge Luis Borges', '2020', 85.00, 2);
+
