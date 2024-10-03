@@ -38,18 +38,6 @@ CREATE TABLE TB_POEMA (
     STOCK INT
 );
 
--- Crear la tabla TB_FICCION
-CREATE TABLE TB_FICCION (
-    ID INT PRIMARY KEY,
-    CODIGO_LIBRO VARCHAR(10),
-    TITULO VARCHAR(70),
-    GENERO VARCHAR(20),
-    AUTOR VARCHAR(100),
-    ANIO_LANZAMIENTO VARCHAR(4),
-    PRECIO DECIMAL(6,2),
-    STOCK INT
-);
-
 -- Crear la tabla TB_HORROR
 CREATE TABLE TB_HORROR (
     ID INT PRIMARY KEY,
@@ -254,4 +242,3 @@ INSERT INTO TB_POEMA (ID, CODIGO_LIBRO, TITULO, GENERO, AUTOR, ANIO_LANZAMIENTO,
 (7, 'POE007', 'El poema de los dones', 'Poesía', 'Pablo Neruda', '2017', 80.00, 5),
 (8, 'POE008', 'Los poemas de la tierra', 'Poesía', 'Octavio Paz', '2019', 70.00, 3),
 (9, 'POE009', 'La casa de la alegría', 'Poesía', 'Jorge Luis Borges', '2020', 85.00, 2);
-
