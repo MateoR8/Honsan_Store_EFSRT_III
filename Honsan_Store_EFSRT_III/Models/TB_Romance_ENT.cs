@@ -1,6 +1,6 @@
 ﻿namespace Honsan_Store_EFSRT_III.Models
 {
-    public class TB_ROMANCE_ENT
+    public class TB_Romance_ENT
     {
 
         public int ID { get; set; }
